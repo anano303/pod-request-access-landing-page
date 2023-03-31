@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chivo';
+    font-style: normal;
+    background-image: url( ./image-host.jpg);
+    background-size: cover;
+    position: relative;
+    
+    
+    
+    
+    
+}
+
+.bg-ground {
+    position: absolute;
+    background-color: #121725;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+    z-index: -5;
+    margin-top: -80px;
+    
+    
+    
+}
+
+.container {
+    margin: 24px;
+
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+    
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.text h2  {
+    font-family: 'Chivo';
+    margin-top: 57px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #54E6AF;
+
+}
+
+.text p {
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #C2CBE5;
+    margin-bottom: 33px;
+}
+span {
+    color: white;
+}
+
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
+    margin-bottom: 94px;
+}
+.auth #mail {
+    background-color: #2C344B;
+    border-radius: 28px;
+    height: 46px;
+    border: none;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-left: 32px;
+}
+
+.auth button {
+    border-radius: 28px;
+    height: 46px;
+    background-color: #54E6AF;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+    border: none;
+    font-family: 'chivo';
+    font-size: 14px;
+    line-height: 28px;
+    color: #121725;
+    
+}
+@media screen and (min-width:768px) {
+    body {
+        background-image: url(C:\Users\a.beroshvili\Desktop\figma designs\pod-request-access-landing-page\starter-code\assets\tablet\image-host.jpg);
+    }
+} {
+    
+}
