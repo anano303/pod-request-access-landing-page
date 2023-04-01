@@ -25,19 +25,23 @@
                 <span> everywhere. </span></h2>
                 <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
         </div>
+        <div class="footer">
             <div class="logos">
-                <img src="spocify.png" alt="spocify" height="15px">
-                <img src="apple.png" alt="apple" height="14px">
-                <img src="google.png" alt="google" height="9px">
-                <img src="pocket 4.png" alt="pocket" height="10px">
+                <img class="spotify" src="./styles/desktop/spotify.svg" alt="spotify">
+                <img class="apple" src="./styles/desktop/apple-podcast.svg" alt="apple">
+                <img class="google" src="./styles/desktop/google-podcasts.svg" alt="google" >
+                <img class="pocket" src="./styles/desktop/pocket-casts.svg" alt="pocket" >
         </div>
 
-        <div class="auth">
+        <form  class="auth" id="auth" action="">
             <input type="email" placeholder="Email address" id="mail" >
-            <button>Request Access</button>
-        </div>
-    </div>
+            <input class="button" type="submit" value="Request Access">
+            <span class="error" id="error">Oops! Please check your email</span>
+        </form>
+        
 
+    </div>
+    <div class="bg-logo"></div>
     <script src="script.js"></script>
 </body>
 </html>

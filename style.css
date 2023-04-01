@@ -3,26 +3,22 @@
 }
 
 body {
-    font-family: 'Chivo';
+    font-family: 'Chivo' , sans-serif;
     font-style: normal;
-    background-image: url( ./image-host.jpg);
+    background-image: url( ./styles/image-host.jpg);
     background-size: cover;
-    position: relative;
-    
-    
-    
-    
+    background-color: #121725;
     
 }
 
 .bg-ground {
     position: absolute;
     background-color: #121725;
-    height: 100%;
+    height: 132%;
     width: 100%;
     mix-blend-mode: multiply;
     z-index: -5;
-    margin-top: -80px;
+    margin-top: -72px;
     
     
     
@@ -36,13 +32,30 @@ body {
 .header-logo {
     display: flex;
     justify-content: center;
-    margin-top: 72px;
+    padding-top: 72px;
     
 }
 
 .logos {
     display: flex;
     justify-content: space-between;
+}
+
+.spotify {
+    height: 16,95px;
+    width: 55,94px;
+}
+.apple {
+    height: 17px;
+    width: 45px;
+}
+.google {
+    height: 11px;
+    width: 73px;
+}
+.pocket {
+    height: 15px;
+    width: 77px;
 }
 
 
@@ -78,13 +91,22 @@ span {
     color: white;
 }
 
+#error {
+    color: red;
+    display: none;
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin: -15px 25px;
+}
 
 .auth {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-top: 48px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .auth #mail {
     background-color: #2C344B;
@@ -99,7 +121,7 @@ span {
     padding-left: 32px;
 }
 
-.auth button {
+.auth .button {
     border-radius: 28px;
     height: 46px;
     background-color: #54E6AF;
@@ -109,12 +131,176 @@ span {
     font-size: 14px;
     line-height: 28px;
     color: #121725;
+    cursor: pointer;
     
 }
 @media screen and (min-width:768px) {
     body {
-        background-image: url(C:\Users\a.beroshvili\Desktop\figma designs\pod-request-access-landing-page\starter-code\assets\tablet\image-host.jpg);
-    }
-} {
+        font-family: 'Chivo', sans-serif;
+        background-color: #121725;
+        background-image: none;
+        
+        
+
+} 
+.bg-ground { 
+    background-color: #121725;
+    background-image: url(./styles/tablet-image-host.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    mix-blend-mode: normal;
+
+}
+.bg-logo {
+        background-image: url(./styles/desktop/bg-pattern-dots.svg);
+        background-size: contain;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        width: 232px;
+        height: 104px;
+        margin-top: 153px;
+}
+.header-logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 39px;
+}
+
+.container {
+    width: 635px;
+    background-color: #121725;
+    margin-top: 60px;
+    margin: 39px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+}
     
+.logos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+    padding-left: 10px;
+    
+}
+.spotify {
+    height: 29px;
+    width: 96px;
+}
+.apple {
+    height: 29px;
+    width: 78px;
+}
+.google {
+    height: 18px;
+    width: 125px;
+}
+.pocket {
+    height: 26px;
+    width: 129px;
+}
+.auth {
+    position: relative;
+
+}
+
+.auth #mail {
+    width: 427px;
+    height: 56px;
+    margin-left: 3px;
+    margin-bottom: -15px;
+}
+.auth .button {
+    position: absolute;
+    transform: translate(162%);
+    top: 6px;
+    width: 162px;
+    height: 46px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    
+
+
+}
+.text h2 {
+    font-family: 'Chivo';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+    margin-top: 80px;
+
+
+}
+.text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-right: 190px;
+    text-align: left;
+}
+
+#error {
+    margin-top: 60px;
+}
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        background-color: #121725;
+        background-image: none;
+        max-width: 1440px;
+        
+    }
+    .bg-ground { 
+        width: 100%;
+        background-color: #121725;
+        background-image: url("./styles/desktop/desktop-image-host.jpg");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        position: absolute;
+        transform: translateY(70px);
+    }   
+    
+    .bg-logo {
+        background-image: none;
+        background-image: url(./styles/desktop/bg-pattern-dots.svg);
+        background-repeat: no-repeat;
+        width: 232px;
+        height: 104px;
+        position: absolute;
+        margin-top: -120px;
+        margin-left: 72%;  
+    }
+
+    .header-logo {
+        margin-left: 165px;
+    }
+
+    .container {
+        margin-left: 165px;
+        width: 723px;
+    }
+
+.text h2 {
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+}
+
+.text p {
+    ont-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+        
 }
